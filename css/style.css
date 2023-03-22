@@ -1,5 +1,4 @@
 body{
-
    
     width: 100%;
     height: 100%;
@@ -8,59 +7,157 @@ body{
   
 
 }
-.videoPrincipal
+
+header
 {
-    width: 100%;
-    height: 28rem;
-}
-div.divisaoPrincipal
-{   
-    margin-left: 3rem;
-    margin-top: 3rem;
-    width: 70%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 20% auto 30%;
+    align-items: center;
+    gap: 5;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-}
-
-div.tabelaVideos
+.logo 
 {
-    width: 30%;
-    height: 100%;
-    margin-right: 2rem;
-    margin-top: 3rem;
-    margin-left: 2rem;
-
+   margin-left: 3rem;
+   padding: 3px;
+}
+.logo img 
+{
+    width: 100px;
+    height: 50px;
 }
 
-div.tabelaVideos iframe
+.pesquisa
 {
-  
-    width: 100%;
-    height: 11rem;
-    border-radius: 3px;
-
+    justify-self: center;
 }
-
-div.divisaoPrincipal img
+.pesquisa input
 {
-    border-radius: 1000cm;
-    width: 2rem;
+    width: 30rem;
     height: 2rem;
+    margin-left: 5rem;
+    
+}
+
+.perfil
+{
+    justify-self: end;
+    margin-right: 4rem;
+}
+
+.imagemPerfil 
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.icones
+{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px
+}
+
+.container
+{
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "video video video ads ads"
+        "video video video sug sug"
+        "canal canal canal sug sug"
+        "des    des   des  sug sug"
+        "coment  coment coment sug sug";
 
 }
 
+.video
+{   
+    grid-area: video;
+    margin-left: 8rem;
+    
+}
+
+.video iframe 
+{
+    width: 55rem;
+    height: 60vh;
+}
+
+.ads
+{   
+    grid-area: ads;
+    justify-self:end;
+    margin-right:6rem;
+}
+
+.ads img
+{
+    width: 25rem;
+    height: 10rem;
+}
+.ads div
+{
+    display: flex;
+   align-items: center;
+}
+
+#adsImagem
+{
+    width: 50px;
+    height: 50px;
+}
+#adsImagem02
+{
+    width:  150px;
+    height: 150px;
+}
+
+#adsbtn
+{
+    margin-left: 10rem;
+    border-radius:30px;
+    
+}
 
 
+.sug
+{
+    grid-area: sug;
+    
+}
+.sug div 
+{   margin: 10px;
+    display: flex;   
+}
 
+.sug img
+{
+    width: 170px;
+    height: 100px;
+    border-radius: 3px;
+}
+.sug h5
+{  align-self: self-start;
+   margin-left: 3px; 
+}
 
-
-
-
-
+.canal
+{
+    grid-area: canal;
+}
+.canal img
+{
+    width: 50px;
+    height: 50px;
+    border-radius:1000%;
+    padding: 6px;
+    margin-left: 7rem;
+}
+.coment
+{
+    grid-area: coment;
+}
 
 
 
