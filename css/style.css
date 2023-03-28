@@ -9,7 +9,8 @@ body{
 }
 
 header
-{
+{ 
+    
     display: grid;
     grid-template-columns: 20% auto 30%;
     align-items: center;
@@ -59,41 +60,45 @@ header
 }
 
 .container
-{
+{   margin-left: 6rem;
+    position: relative;
     display: grid;
     gap: 5px;
     grid-template-areas:
-        "video video video ads ads"
-        "video video video sug sug"
-        "canal canal canal sug sug"
-        "des    des   des  sug sug"
-        "coment  coment coment sug sug";
+        "video video video video ads"
+        "video video video video sug"
+        "canal canal canal canal sug"
+        "des    des   des  des sug"
+        "coment  coment coment coment sug";
 
 }
 
 .video
 {   
     grid-area: video;
-    margin-left: 8rem;
+    width: 100%;
+
     
 }
 
 .video iframe 
 {
-    width: 55rem;
+    width: 100%;
     height: 60vh;
 }
 
 .ads
 {   
     grid-area: ads;
-    justify-self:end;
-    margin-right:6rem;
+    justify-self: end;
+    width: 100%;
+
+
 }
 
 .ads img
 {
-    width: 25rem;
+    width: 65%;
     height: 10rem;
 }
 .ads div
@@ -124,6 +129,8 @@ header
 .sug
 {
     grid-area: sug;
+    width: 100%;
+
     
 }
 .sug div 
@@ -152,7 +159,7 @@ header
     height: 50px;
     border-radius:1000%;
     padding: 6px;
-    margin-left: 7rem;
+    
 }
 .coment
 {
